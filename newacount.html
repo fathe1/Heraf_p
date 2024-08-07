@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="images/IMG_20231105_202217_434-removebg.png">
+            <link rel="stylesheet" href="CSSFiles/Normalize.css" />
+            <!-- Font Awesome Library -->
+            <link rel="stylesheet" href="CSSFiles/all.min.css" />
+            <!-- Main Template CSS File (stylesheet) -->
+    <link rel="stylesheet" href="CSSFiles/NewACC.css">
+    <title>HerafNEW</title>
+</head>
+<body>
+
+<!-- start header -->
+    <header>
+        <div class="container">
+            <!-- left -->
+            <div class="logo">
+                <img src="images/IMG_20231105_202217_434-removebg.png" alt="Logo">
+            </div>
+            <i class="fas fa-bars toggle-menu"></i>
+            <div class="links">
+                <ul>
+        <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sur">Survices</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+        <div class="background"></div>
+        <div class="lay"></div>
+
+    <div class="main-box center">
+        <h2>Create new acount </h2>
+        <form action="profile.html" method="post" enctype="multipart/form-data">
+            <label for="fname">First name : </label>
+            <input name="first_name"  type="text" id="fname" placeholder="Enter First Name" maxlength="15" autofocus required oninvalid="this.setCustomValidity('error')" oninput="setCustomValidity('')">
+            
+            <label for="lname">Last name : </label>
+            <input name="last_name" type="text" id="lname" placeholder="Enter Last Name" maxlength="15" required >
+            
+            <label for="photo">Your Profile Photo : </label>
+            <input type="file" name="photo" id="photo" required accept="image/*">
+            
+            
+            <label for="Address">Your Address : </label>
+            <input type="text" name="Address" id="Address" placeholder="Tahla Banha Qalyubia">
+
+
+            <label for="num">Your phone number</label>
+            <input type="tel" name="phone" id="num" placeholder="+20" maxlength="11">
+            
+            <label for="jobInfo">your job : </label>
+            <input type="text" name="jobInfo" placeholder="Carpenter or Mechanical or ...." id="jobInfo" >
+            
+            
+            
+            <label for="Email">Email : </label>
+            <input name="email" type="text" id="Email" placeholder="yourmail@gmail.com" maxlength="25" required>
+            
+            <label for="pass">password : </label>
+            <input name="pass_word" type="pass" id="pass" placeholder="pass" maxlength="25"  minlength="5" required>
+            
+            <input class="sub" type="submit" value="sign up" >
+            
+            <div class="Error"></div>
+        </form>
+    </div>
+</body>
+<script src=""></script>
+</html>
+
